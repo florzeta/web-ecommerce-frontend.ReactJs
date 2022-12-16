@@ -3,7 +3,7 @@
         "id": 1,
         "idCategoria": 1,
         "nombre": "Lentes Dua",
-        "modelo": "marco negro, vidrio: marron",
+        "modelo": "Marco: color negro, Vidrio: marron",
         "precio": 3500,
         "stock": 40,
         "img": "lentes-dua.jpg"
@@ -33,17 +33,17 @@
         "id":4,
         "idCategoria":1,
         "nombre":"Lentes Grecia",
-        "modelo":"",
+        "modelo":"Marco color Marron, con vidrio que combina",
         "precio":2800,
         "stock":20,
         "img":"lentes-grecia.jpg"
 
     },
     {
-        "id":4,
+        "id":5,
         "idCategoria":1,
         "nombre":"Lentes John",
-        "modelo":"",
+        "modelo":"Vidrio: amarillo, marco liviano.",
         "precio":3200,
         "stock":10,
         "img":"lentes-jhon.jpg"
