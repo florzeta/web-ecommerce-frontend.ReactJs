@@ -1,4 +1,5 @@
 import Categorias from "../Categorias/Categorias";
+import CartWidget from "../CartWidget/CartWidget";
 const Navbar = () => {
     return (
         
@@ -11,6 +12,7 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
                         <Categorias/>
+                        <CartWidget/>
                         <form className="d-flex">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                             <button className="btn btn-outline-success" type="submit">Search</button>
