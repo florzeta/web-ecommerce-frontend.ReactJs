@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "idCategoria": 1,
+        "nombre": "Lentes Dua",
+        "modelo": "marco negro, vidrio: marron",
+        "precio": 3500,
+        "stock": 40,
+        "img": "lentes-dua.jpg"
+
+    },
+    {
+        "id": 2,
+        "idCategoria": 2,
+        "nombre": "Morral Fred",
+        "modelo": "Mochila Marron de cuerina",
+        "precio": 2400,
+        "stock": 30,
+        "img": "morral-marron.jpg"
+
+    },
+    {
+        "id": 3,
+        "idCategoria": 3,
+        "nombre": "Billetera Pink",
+        "modelo": "Billetera de gamuza color rosa",
+        "precio": 3000,
+        "stock": 15,
+        "img":"billetera-rosa.jpg"
+
+    },
+    {
+        "id":4,
+        "idCategoria":1,
+        "nombre":"Lentes Grecia",
+        "modelo":"",
+        "precio":2800,
+        "stock":20,
+        "img":"lentes-grecia.jpg"
+
+    },
+    {
+        "id":4,
+        "idCategoria":1,
+        "nombre":"Lentes John",
+        "modelo":"",
+        "precio":3200,
+        "stock":10,
+        "img":"lentes-jhon.jpg"
+
+    }
+
+]
