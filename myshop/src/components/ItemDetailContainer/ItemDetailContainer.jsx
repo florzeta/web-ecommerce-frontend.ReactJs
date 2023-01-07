@@ -1,19 +1,23 @@
 import { useState, useEffect } from "react";
-import { consultarBDD } from "../../Assets/funciones";
+import { useParams } from "react-router-dom";
+import { consultarBDD } from "../../assets/funciones";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import { useDarkModeContext } from "../../context/DarkModeContext";
 const ItemDetailContainer = () => {
     const [producto, setProducto] = useState([]);
+    const {id} = useParams()
+    const {darkMode} = useDarkModeContext()
 
     useEffect(() => {
-        consultarBDD().then(productos => {
-            const prod = productos.find(product => product.id === 2)
+        consultarBDD('../json/productos.json').then(productos => {
+            const prod = productos.find(product => product.id === parseInt(id))
             setProducto(prod)
         })
-        
+
     }, []);
 
     return (
-        <div className="card mb-3 container itemDetail">
+        <div className={`card mb-3 container itemDetail ${darkMode ? 'text-black bg-secondary' : 'text-black border-light'}`}>
             <ItemDetail item={producto} />
         </div>
     );

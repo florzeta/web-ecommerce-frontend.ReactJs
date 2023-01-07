@@ -1,28 +1,26 @@
-import Categorias from "../Categorias/Categorias";
-import CartWidget from "../CartWidget/CartWidget";
+import BotonDarkMode from './BotonDarkMode/BotonDarkMode'
+import Categorias from '../Categorias/Categorias';
+import CartWidget from '../CartWidget/CartWidget';
+
+//context
+import { useDarkModeContext } from '../../context/DarkModeContext';
 const Navbar = () => {
+    const {darkMode} = useDarkModeContext()
     return (
         
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className={`navbar navbar-expand-lg navbar-dark ${darkMode ? 'navbar navbar-expand-lg navbar-light bg-dark btn-light' : 'bg-light text-black'}`}>
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">My Shop</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon" />
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-
-                        <Categorias/>
-                        <CartWidget/>
-                        <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon" />
+                        </button>
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <Categorias/>
+                            <CartWidget/>
+                            <BotonDarkMode/>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        
-        
-    );
+                </nav>
+      );
 }
 
 export default Navbar;

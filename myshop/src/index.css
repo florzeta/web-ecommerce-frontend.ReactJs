@@ -1,0 +1,13 @@
+/**reseteo**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgba(220, 220, 220, 0.452);
+    color:black;
+    transition: all 0.5 ease;
+}

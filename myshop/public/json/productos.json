@@ -48,6 +48,46 @@
         "stock":10,
         "img":"lentes-jhon.jpg"
 
+    },
+    {
+        "id":6,
+        "idCategoria":3,
+        "nombre":"portacelular",
+        "modelo":"",
+        "precio":3700,
+        "stock":10,
+        "img":"morral-portacelular.jpg"
+
+    },
+    {
+        "id":7,
+        "idCategoria":2,
+        "nombre":"Mochila Dark",
+        "modelo":"",
+        "precio":5000,
+        "stock":10,
+        "img":"Mochila-dark.jpg"
+
+    },
+    {
+        "id":8,
+        "idCategoria":1,
+        "nombre":"Lentes Tokio",
+        "modelo":"",
+        "precio":3800,
+        "stock":13,
+        "img":"lentes-tokio.jpg"
+    },
+    
+    {
+        "id":10,
+        "idCategoria":2,
+        "nombre":"Mochila Alfred",
+        "modelo":"",
+        "precio":7500,
+        "stock":10,
+        "img":"mochila-oscura.jpeg"
+
     }
 
 ]
