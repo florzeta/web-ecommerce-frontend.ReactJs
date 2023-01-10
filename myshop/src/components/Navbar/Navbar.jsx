@@ -8,7 +8,7 @@ const Navbar = () => {
     const {darkMode} = useDarkModeContext()
     return (
         
-            <nav className={`navbar navbar-expand-lg navbar-dark ${darkMode ? 'navbar navbar-expand-lg navbar-light bg-dark btn-light' : 'bg-light text-black'}`}>
+            <nav className={`navbar navbar-expand-lg ${darkMode ? 'navbar navbar-expand-lg navbar-dark text-white bg-dark btn-light' : 'bg-light text-black navbar-light'}`}>
                 <div className="container-fluid">
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon" />

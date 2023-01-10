@@ -8,7 +8,6 @@ export const CarritoProvider = (props) => {
     const [carrito, setCarrito] = useState([]);
 
     const isInCart = (id) => {
-        //Retorna producto (V) o undefined (F)
         return carrito.find(producto => producto.id === id)    
     }
 
@@ -23,9 +22,6 @@ export const CarritoProvider = (props) => {
                 ...producto,
                 cant : cantidad
             }
-            /*const aux = carrito
-            aux.push(nuevoProducto)
-            setCarrito(aux)*/
             setCarrito([...carrito,nuevoProducto])
         }
     }
@@ -45,7 +41,7 @@ export const CarritoProvider = (props) => {
     const totalPrice = () => {
         return carrito.reduce((acum, prod) => acum += (prod.cant * prod.precio), 0)
     }
-    
+    console.log(carrito)
     return (
         <CarritoContext.Provider value={{carrito, isInCart, addItem, removeItem, emptyCart, getItemQuantity, totalPrice}}>
             {props.children}

@@ -14,9 +14,9 @@ const ItemDetailContainer = () => {
             setProducto(prod)
         })
 
-    }, []);
+     }, []);
 
-    return (
+      return (
         <div className={`card mb-3 container itemDetail ${darkMode ? 'text-black bg-secondary' : 'text-black border-light'}`}>
             <ItemDetail item={producto} />
         </div>

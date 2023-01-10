@@ -4,8 +4,8 @@ const Item = ({producto}) => {
     const {darkMode} = useDarkModeContext()
     return (
         
-            <div className={`card mb-3 cardProducto ${darkMode ? 'text-black bg-secondary' : 'border-light'}`}>
-                <img src={`../img/${producto.img}`} className="card-img-top" alt="..." />
+            <div className={`card m-3 cardProducto ${darkMode ? 'text-black bg-secondary' : 'border'}`}>
+                <img src={producto.img} className="card-img-top" alt="..." />
                 <div className={`card-body ${darkMode ? 'cardBodyDark' : 'cardBody'}`}>
                     <h5 className="card-title">{producto.nombre}</h5>
                     <p className="card-text">{producto.modelo}</p>

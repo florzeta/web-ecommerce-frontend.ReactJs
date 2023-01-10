@@ -19,13 +19,15 @@
 
 .cardProducto {
     width: 19rem;
-    margin: 3rem;
+    margin: 5px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: hsl(0, 0%, 97%);
 }
 
 
 .cardProductos {
-    margin: 4px;
+    margin: 10px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -34,15 +36,19 @@
     background-color: white;
     margin-bottom: 3px;
     text-align: center;
+    color: black;
 }
 
 img {
-    margin-top: 3px;
+    margin-top:15px;
 }
 
 .itemDetail {
-    max-width: 40%;
+    max-width: 50%;
     margin-top: 20px;
+    margin-bottom: 0;
+    height: 100%;
+    top: 10%;
 }
 
 .darkMode {
@@ -71,6 +77,8 @@ img {
 .divButtons button{
     margin:4px;
 }
+
+
 
 @media (max-width:991px) {
     .cartWidget {

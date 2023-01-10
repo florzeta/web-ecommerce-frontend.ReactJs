@@ -1,6 +1,6 @@
 import './App.css';
 //Router dom
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 //context
 import { DarkModeProvider } from '../context/DarkModeContext';
 //components
@@ -25,8 +25,10 @@ const App = () => {
             <Route path='/checkout' element={<Checkout/>}/>
           </Routes>
         </DarkModeProvider>
+
       </BrowserRouter>
     </>
+    
   );
 }
 
