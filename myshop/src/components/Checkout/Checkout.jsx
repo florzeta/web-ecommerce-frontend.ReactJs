@@ -19,12 +19,18 @@ const Checkout = () => {
         <div className="container m-7" style={{marginTop: "20px"}}>
             <form onSubmit={consultarFormulario} ref={datosFormulario}>
                 <div className="mb-3">
-                    <label htmlFor="nombre" className="form-label">Nombre y Apellido</label>
-                    <input type="text" className="form-control" name="nombre" />
+                    <label htmlFor="nombre" className="form-label">Nombre y Apellido*</label>
+                    <input type="text" className="form-control" name="nombre" required maxlength="45"/>
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="email" className="form-label">Email</label>
-                    <input type="email" className="form-control" name="email" />
+                    <label htmlFor="email" className="form-label">Email*</label>
+                    <input type="email" className="form-control" name="email" id="email"
+       pattern=".+@globex\.com" size="30" required />
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="email2" className="form-label">Repetir Email*</label>
+                    <input type="email" className="form-control" name="email2" id="email"
+       pattern=".+@globex\.com" size="30" required />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="dni" className="form-label">DNI</label>
