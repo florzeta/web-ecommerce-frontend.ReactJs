@@ -1,5 +1,4 @@
 .cartWidget {
-    position: relative;
     color: black;
     border-radius: 50rem;
     margin-right: 2rem;
@@ -27,7 +26,6 @@
 
 .cardProductos {
     margin: 10px;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -36,11 +34,10 @@
     background-color: white;
     margin-bottom: 3px;
     text-align: center;
-    color: black;
 }
 
 img {
-    margin-top:15px;
+    margin-top:5px;
 }
 
 .itemDetail {
