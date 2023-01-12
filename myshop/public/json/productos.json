@@ -3,10 +3,10 @@
         "id": 1,
         "idCategoria": 1,
         "nombre": "Lentes Dua",
-        "modelo": "Marco: color negro, Vidrio: marron",
+        "modelo": "Elegantes con detalles en color dorado",
         "precio": 3500,
         "stock": 40,
-        "img": "lentes-dua.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/proyecto-reactjs-coder-aa6e4.appspot.com/o/lentes-dua.jpg?alt=media&token=5781f613-fd6b-4d14-92ab-46f320339f51"
 
     },
     {
@@ -16,7 +16,7 @@
         "modelo": "Mochila Marron de cuerina",
         "precio": 2400,
         "stock": 30,
-        "img": "morral-marron.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/proyecto-reactjs-coder-aa6e4.appspot.com/o/morral-marron.jpg?alt=media&token=3518d178-8ea7-4f17-ae21-d2a77e4ddbab"
 
     },
     {
@@ -26,7 +26,7 @@
         "modelo": "Billetera de gamuza color rosa",
         "precio": 3000,
         "stock": 15,
-        "img":"billetera-rosa.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/proyecto-reactjs-coder-aa6e4.appspot.com/o/billetera-rosa.jpg?alt=media&token=a69b91bd-1212-43c8-991b-1dc803f42c72"
 
     },
     {
@@ -36,7 +36,7 @@
         "modelo":"Marco color Marron, con vidrio que combina",
         "precio":2800,
         "stock":20,
-        "img":"lentes-grecia.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/proyecto-reactjs-coder-aa6e4.appspot.com/o/lentes-grecia.jpg?alt=media&token=b29198d4-0850-4fbf-b88d-824367519b78"
 
     },
     {
@@ -46,47 +46,47 @@
         "modelo":"Vidrio: amarillo, marco liviano.",
         "precio":3200,
         "stock":10,
-        "img":"lentes-jhon.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/proyecto-reactjs-coder-aa6e4.appspot.com/o/lentes-jhon.jpg?alt=media&token=4707be28-f422-42f5-a7a0-33dc8526e537"
 
     },
     {
         "id":6,
         "idCategoria":3,
         "nombre":"portacelular",
-        "modelo":"",
+        "modelo":"Morral de cuero",
         "precio":3700,
         "stock":10,
-        "img":"morral-portacelular.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/proyecto-reactjs-coder-aa6e4.appspot.com/o/morral-portacelular.jpg?alt=media&token=437164c7-84a6-4130-9c4f-03f9cbc845fc"
 
     },
     {
         "id":7,
         "idCategoria":2,
         "nombre":"Mochila Dark",
-        "modelo":"",
+        "modelo":"cuero. Con compatimentos",
         "precio":5000,
         "stock":10,
-        "img":"Mochila-dark.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/proyecto-reactjs-coder-aa6e4.appspot.com/o/mochila-dark.jpg?alt=media&token=388d7770-8af4-4638-8f0e-8a30e885e4cd"
 
     },
     {
         "id":8,
         "idCategoria":1,
         "nombre":"Lentes Tokio",
-        "modelo":"",
+        "modelo":"Marco Negro.",
         "precio":3800,
         "stock":13,
-        "img":"lentes-tokio.jpg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/proyecto-reactjs-coder-aa6e4.appspot.com/o/lentes-tokio.jpg?alt=media&token=5cc7f945-fe12-4923-9d2e-410d84ab52ae"
     },
     
     {
         "id":10,
         "idCategoria":2,
         "nombre":"Mochila Alfred",
-        "modelo":"",
+        "modelo":"Negro/Verde Militar. Bolsillos",
         "precio":7500,
         "stock":10,
-        "img":"mochila-oscura.jpeg"
+        "img":"https://firebasestorage.googleapis.com/v0/b/proyecto-reactjs-coder-aa6e4.appspot.com/o/mochila-oscura.jpeg?alt=media&token=7e39804c-54af-4838-bdee-4bd94a43b086"
 
     }
 
