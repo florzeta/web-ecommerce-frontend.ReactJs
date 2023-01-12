@@ -3,7 +3,7 @@ import {getFirestore, addDoc, collection} from 'firebase/firestore'
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBqvlGS5kJbHnaVuRzEJlyv-EpLy_U21Mc",
+  apiKey: process.env.API_KEY,
   authDomain: "proyecto-reactjs-coder-aa6e4.firebaseapp.com",
   projectId: "proyecto-reactjs-coder-aa6e4",
   storageBucket: "proyecto-reactjs-coder-aa6e4.appspot.com",
