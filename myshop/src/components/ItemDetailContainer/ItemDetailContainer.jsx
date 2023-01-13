@@ -5,12 +5,12 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import { useDarkModeContext } from "../../context/DarkModeContext";
 const ItemDetailContainer = () => {
     const [producto, setProducto] = useState([]);
-    const {id} = useParams()
-    const {darkMode} = useDarkModeContext()
+    const { id } = useParams()
+    const { darkMode } = useDarkModeContext()
 
     useEffect(() => {
         getProducto(id).then(prod => setProducto(prod))
-        
+
     }, []);
 
     return (
