@@ -11,7 +11,7 @@ const ItemDetail = ({item}) => {
     }
     
     return (
-        <div className={`row ${darkMode ? 'bg-dark text-white' : 'BG-light text-black'}`}>
+        <div className={`row ${darkMode ? 'bg-dark text-white' : 'bg-light text-black'}`}>
             <div className="col-md-4 imgBody">
                 <img src={item.img} alt="img" className="img-fluid rounded-start"/>
             </div>
