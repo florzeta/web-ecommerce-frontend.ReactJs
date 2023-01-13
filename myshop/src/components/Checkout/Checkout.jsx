@@ -1,36 +1,63 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-const Checkout = () => { 
-
+import { createOrdenCompra, getOrdenCompra, getProducto, updateProducto } from '../../assets/firebase';
+import { useCarritoContext } from "../../context/CarritoContex";
+import { toast } from 'react-toastify';
+const Checkout = () => {
+    const { totalPrice, carrito, emptyCart } = useCarritoContext()
     const datosFormulario = React.useRef()
     let navigate = useNavigate()
 
     const consultarFormulario = (e) => {
         e.preventDefault()
-        console.log(datosFormulario)
         const datForm = new FormData(datosFormulario.current)
         const cliente = Object.fromEntries(datForm)
-        console.log(cliente)
-        e.target.reset()
-        navigate("/")
-    }
 
+        const aux = [...carrito]
+
+        aux.forEach(prodCarrito => {
+            getProducto(prodCarrito.id).then(prodBDD => {
+                if (prodBDD.stock >= prodCarrito.cant) {
+                    prodBDD.stock -= prodCarrito.cant
+                    updateProducto(prodCarrito.id, prodBDD)
+
+                } else {
+                    toast.error(`El producto ${prodBDD.nombre} no posee stock suficiente`)
+                    emptyCart()
+                }
+            })
+        })
+
+        createOrdenCompra(cliente, totalPrice(), new Date().toISOString()).then(ordenCompra => {
+            getOrdenCompra(ordenCompra.id).then(item => {
+                toast.success(`¡Muchas gracias por su compra, su orden es ${item.id}`)
+                emptyCart()
+                e.target.reset()
+                navigate("/")
+            }).catch(error => {
+                toast.error("Su orden no fue generada con exito")
+                console.error(error)
+            })
+
+        })
+
+    }
     return (
-        <div className="container m-7" style={{marginTop: "20px"}}>
+        <div className="container" style={{ marginTop: "20px" }}>
             <form onSubmit={consultarFormulario} ref={datosFormulario}>
                 <div className="mb-3">
                     <label htmlFor="nombre" className="form-label">Nombre y Apellido*</label>
-                    <input type="text" className="form-control" name="nombre" required maxlength="45"/>
+                    <input type="text" className="form-control" name="nombre" required maxlength="45" />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email*</label>
                     <input type="email" className="form-control" name="email" id="email"
-       pattern=".+@globex\.com" size="30" required />
+                        required placeholder="name@example.com" />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="email2" className="form-label">Repetir Email*</label>
-                    <input type="email" className="form-control" name="email2" id="email"
-       pattern=".+@globex\.com" size="30" required />
+                    <input type="email" className="form-control" name="email2" id="email2"
+                        required  placeholder="name@example.com"/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="dni" className="form-label">DNI</label>
