@@ -30,7 +30,6 @@ Al apretar en finalizar compra aparece el formulario para realizar la orden:
 
 
 Al finalizar compra en el form tras completar los datos, aparece alert con numero de orden, los datos que no pueden faltar estan marcados con (*):
-![image](https://user-images.githubusercontent.com/99660646/212427066-1b5295bc-1838-460e-93e5-95a5df8dbfb4.png)
 
 ![image](https://user-images.githubusercontent.com/99660646/212426818-31094639-add1-4ba2-a0d3-bc929e2b7cfd.png)
 
