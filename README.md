@@ -1,4 +1,4 @@
-# Proyecto-React Js - Proyecto Ecommerce | CODERHOUSE, comision 41100
+# Proyecto-React Js - Proyecto tienda Ecommerce con React Js
 
 Este es mi proyecto final para el curso de REACT JS de CODERHOUSE, desarrollado con React JS y Firebase de Google como storage para imagenes, creacion de ordenes y productos
 
